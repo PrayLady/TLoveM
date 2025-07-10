@@ -61,7 +61,7 @@
     .card-overlay {
       position: absolute;
       bottom: 0;
-      background: rgba(0,0,0,0.6);
+      background: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
@@ -119,6 +119,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 8px;
+  margin-left: 5px;
   box-sizing: border-box;
   background: linear-gradient(to top, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0) 100%);
   color: white;
@@ -139,6 +140,7 @@
   font-size: 12px;
   color: #aaa;
   margin-bottom: 4px;
+  margin-left: 5px;
   letter-spacing: 0.5px;
 }
 
@@ -226,16 +228,34 @@
   
   <!-- 주요 페어 카드 리스트 -->
   <div class="couple-row">
-    <h2>주요 커플</h2>
     <div class="couple-carousel">
-      <div class="couple-card" style="background-image: url('aiden-leo.jpg');">
+      <div class="couple-card" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcfWMpN%2FbtsPb9gZrrN%2FAAAAAAAAAAAAAAAAAAAAAANaJGI7bo03BY9pRArGOK8TBYsREb2UTCP66d6gsalb%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DehMrS4OClU5WbB%252FSrL%252FAdQjYdAg%253D') no-repeat left bottom/cover;">
         <div class="card-overlay">
-          <h3>옆자리</h3>
+          <h2>옆자리</h2>
           <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
-          <a href="aiden-leo.html">상세 보기 →</a>
         </div>
       </div>
-      <!-- 다른 주요 커플 카드들 -->
+      <div class="couple-card" style="background: rgba(141,185,112,1);">
+        <div class="card-overlay">
+          <h2>옆자리</h2>
+          <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
+          <a href="lucy-edel.html">보기</a>
+        </div>
+      </div>
+      <div class="couple-card" style="background: rgba(141,185,112,1);">
+        <div class="card-overlay">
+          <h2>옆자리</h2>
+          <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
+          <a href="lucy-edel.html">보기</a>
+        </div>
+      </div>
+      <div class="couple-card" style="background: rgba(141,185,112,1);">
+        <div class="card-overlay">
+          <h2>옆자리</h2>
+          <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
+          <a href="lucy-edel.html">보기</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
