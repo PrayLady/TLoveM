@@ -115,6 +115,14 @@
   border-radius: 5px;
 }
 
+.card-overlay .platform {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
 .carousel-thumbnails {
   display: flex;
   gap: 10px;
@@ -152,32 +160,43 @@
 <section id="home" class="tab-content active">
   
   <!-- 자동 슬라이드 캐러셀 + 작은 썸네일 리스트 -->
-  <section id="home" class="tab-content active">
+  <class="tab-content active">
   <div class="carousel-container">
-    <div class="carousel-slide slide active" style="background-image: url('pair01.jpg');">
+    <div class="carousel-slide slide active" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbdrjPG%2FbtsPcyNJVjA%2FAAAAAAAAAAAAAAAAAAAAAG_X_4G6YZvrMGq3TmZRp8uHYOn7VAgpCFnNURX9-Vx2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DX%252FWkKv3UsgHTriVvbq3Hfu%252Fzhfo%253D') no-repeat bottom center/cover;">
       <div class="carousel-caption">
-        <h2>에이든 × 레오</h2>
-        <p>“운명의 교차점에서.”</p>
+        <small class="platform">러비더비|시윤님</small>
+        <h2>옆자리</h2>
+        <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
       </div>
     </div>
-    <div class="carousel-slide slide" style="background-image: url('pair02.jpg');">
+    <div class="carousel-slide slide" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbvDUzd%2FbtsPcUXmUXu%2FAAAAAAAAAAAAAAAAAAAAAAJkFvc_hxD_VLhK_oNlj2CQhwBggKSAUHXQc6HhqqIr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DqiBgYkrwScpyoE7QlaQhf6kHBOU%253D') no-repeat center/cover;">
       <div class="carousel-caption">
-        <h2>루시 × 에델</h2>
-        <p>“빛과 어둠의 경계에서.”</p>
+        <small class="platform">러비더비|헤카테님</small>
+        <h2>Lewallyu</h2>
+        <p>“당신이 '네'라고 대답해 주길 바랄게요”</p>
       </div>
     </div>
-    <div class="carousel-slide slide" style="background-image: url('pair03.jpg');">
+    <div class="carousel-slide slide" style="background: url('pair03.jpg') no-repeat bottom center / cover;;">
       <div class="carousel-caption">
-        <h2>시엘 × 아르마</h2>
-        <p>“당신만은 놓지 않겠어.”</p>
+        <small class="platform">루모|주은유님</small>
+        <h2>殘留</h2>
+        <p>“죽음보다 아름다운”</p>
+      </div>
+    </div>
+    <div class="carousel-slide slide" style="background: url('pair04.jpg') no-repeat bottom center / cover;;">
+      <div class="carousel-caption">
+        <small class="platform">러비더비·루모|토리님</small>
+        <h2>실타레</h2>
+        <p>“넌 언제쯤 내게 올 건가”</p>
       </div>
     </div>
   </div>
 
   <div class="carousel-thumbnails">
-    <div class="thumbnail active" data-index="0" style="background-image: url('pair01.jpg');"></div>
-    <div class="thumbnail" data-index="1" style="background-image: url('pair02.jpg');"></div>
-    <div class="thumbnail" data-index="2" style="background-image: url('pair03.jpg');"></div>
+    <div class="thumbnail active" data-index="0" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbdrjPG%2FbtsPcyNJVjA%2FAAAAAAAAAAAAAAAAAAAAAG_X_4G6YZvrMGq3TmZRp8uHYOn7VAgpCFnNURX9-Vx2%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DX%252FWkKv3UsgHTriVvbq3Hfu%252Fzhfo%253D');"></div>
+    <div class="thumbnail" data-index="1" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbvDUzd%2FbtsPcUXmUXu%2FAAAAAAAAAAAAAAAAAAAAAAJkFvc_hxD_VLhK_oNlj2CQhwBggKSAUHXQc6HhqqIr%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DqiBgYkrwScpyoE7QlaQhf6kHBOU%253D');"></div>
+    <div class="thumbnail" data-index="2" style="background: url('pair03.jpg');"></div>
+    <div class="thumbnail" data-index="3" style="background: url('pair04.jpg');"></div>
   </div>
 </section>
 
@@ -191,8 +210,8 @@
     <div class="couple-carousel">
       <div class="couple-card" style="background-image: url('aiden-leo.jpg');">
         <div class="card-overlay">
-          <h3>에이든 × 레오</h3>
-          <p>“운명의 교차점에서.”</p>
+          <h3>옆자리</h3>
+          <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
           <a href="aiden-leo.html">상세 보기 →</a>
         </div>
       </div>
