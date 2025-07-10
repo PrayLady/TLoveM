@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>아가씨의 사이트</title>
+  <title>커플링 아카이브</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .couple-card {
+      position: relative;
+      width: 250px;
+      height: 140px;
+      background-size: cover;
+      background-position: center;
+      margin: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .couple-card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .couple-card:hover .card-overlay {
+      opacity: 1;
+    }
+
+    .couple-carousel {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .couple-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>안녕하세요, 여긴 아가씨의 깃허브 사이트입니다.</h1>
-  <p>첫 페이지예요.</p>
+  <h1>💘 커플링 아카이브</h1>
+
+  <div class="couple-row">
+    <h2>주요 커플</h2>
+    <div class="couple-carousel">
+      <div class="couple-card" style="background-image: url('aiden-leo.jpg');">
+        <div class="card-overlay">
+          <h3>에이든 × 레오</h3>
+          <p>“운명의 교차점에서.”</p>
+          <a href="aiden-leo.html">상세 보기 →</a>
+        </div>
+      </div>
+      <!-- 다른 주요 커플 카드들 -->
+    </div>
+  </div>
+
+  <div class="couple-row">
+    <h2>기타 커플</h2>
+    <div class="couple-grid">
+      <div class="couple-card" style="background-image: url('pair01.jpg');">
+        <div class="card-overlay">
+          <h3>루시 × 에델</h3>
+          <a href="lucy-edel.html">보기</a>
+        </div>
+      </div>
+      <!-- 기타 커플 카드들 -->
+    </div>
+  </div>
 </body>
 </html>
