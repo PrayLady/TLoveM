@@ -44,7 +44,7 @@
 
     .couple-card {
       position: relative;
-      width: 250px;
+      width: 100vh;
       height: 140px;
       background-size: cover;
       background-position: center;
@@ -119,21 +119,21 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 8px;
-  margin-left: 5px;
   box-sizing: border-box;
   background: linear-gradient(to top, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0) 100%);
   color: white;
 }
     
-    .carousel-caption h2 {
+.carousel-caption h2 {
   font-size: 36px;
+  margin-left: 5px;
   margin: 0px;
 }
-    .carousel-caption p {
+.carousel-caption p {
   font-size: 16px;
+  margin-left: 5px;
   line-height: 1.4;
 }
-
 
 .platform {
   display: block;
@@ -194,14 +194,14 @@
     <div class="carousel-slide slide" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F5LYWT%2FbtsPdMxAQOD%2FAAAAAAAAAAAAAAAAAAAAAMBYmIWU5izMDuD6ZGeB3Wusq9ieeeplUomG5P_ZiNVV%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FfD2ysvq6Kt0xApREjZMAOJzJwU%253D') no-repeat top center/cover;">
       <div class="carousel-caption">
         <small class="platform">러비더비 | 헤카테님</small>
-        <h2>Lewallyu</h2>
+        <h2> Lewallyu</h2>
         <p>“당신이 '네'라고 대답해 주길 바랄게요”</p>
       </div>
     </div>
     <div class="carousel-slide slide" style="background: url('pair03.jpg') no-repeat bottom center / cover;;">
       <div class="carousel-caption">
         <small class="platform">루모 | 주은유님</small>
-        <h2>殘留</h2>
+        <h2> 殘留</h2>
         <p>“죽음보다 아름다운”</p>
       </div>
     </div>
@@ -228,11 +228,12 @@
   
   <!-- 주요 페어 카드 리스트 -->
   <div class="couple-row">
-    <div class="couple-carousel">
+    <div class="couple-carousel" style="flex-direction: column;">
       <div class="couple-card" style="background: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcfWMpN%2FbtsPb9gZrrN%2FAAAAAAAAAAAAAAAAAAAAAANaJGI7bo03BY9pRArGOK8TBYsREb2UTCP66d6gsalb%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DehMrS4OClU5WbB%252FSrL%252FAdQjYdAg%253D') no-repeat left bottom/cover;">
         <div class="card-overlay">
           <h2>옆자리</h2>
           <p>“너처럼 내 성질을 돋우는 애는 처음이라니까?”</p>
+          <a href="Mattewpray.html">보기</a>
         </div>
       </div>
       <div class="couple-card" style="background: rgba(141,185,112,1);">
@@ -265,8 +266,8 @@
   <!-- 서브 페어 카드 리스트 -->
   <div class="couple-row">
     <h2>기타 커플</h2>
-    <div class="couple-grid">
-      <div class="couple-card" style="background-image: url('pair01.jpg');">
+    <div class="couple-grid" style="flex-direction: column;">
+      <div class="couple-card" style="background: rgba(200,200,200,1);">
         <div class="card-overlay">
           <h3>루시 × 에델</h3>
           <a href="lucy-edel.html">보기</a>
